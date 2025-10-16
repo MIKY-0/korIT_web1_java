@@ -11,6 +11,6 @@ public class Operator1 {
     //(문제1)       int unit = x , onePage = 20;
         //         System.out.println(unit / onePage);
 //        (문제)2 int now = 22
-//        System.out.println(50 % 24 + now);
+//        System.out.println((now + 50) % 24);
     }
 }
