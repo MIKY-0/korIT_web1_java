@@ -1,0 +1,10 @@
+package _11_Scope;
+
+public class Scope1 {
+    public static void main(String[] args) {
+        int m = 10;
+        if(true){
+            int x = 20;
+        }
+    }
+}
