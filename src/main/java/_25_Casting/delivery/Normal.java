@@ -1,0 +1,14 @@
+package _25_Casting.delivery;
+
+public class Normal extends Delivery{
+    public Normal(int distance, int weight) {
+        super(distance, weight);
+    }
+
+    @Override
+    public int calcFree() {
+        System.out.println("일반배송 시작");
+        int fee = 3000 + distance * 200 + weight * 100;
+        return fee;
+    }
+}
