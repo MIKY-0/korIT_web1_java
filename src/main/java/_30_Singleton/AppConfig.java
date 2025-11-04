@@ -32,4 +32,11 @@ public class AppConfig {
     public void setAppMode(String appMode) {//(A)
         this.appMode = appMode;
     }
-}
+    }
+
+
+
+
+
+
+

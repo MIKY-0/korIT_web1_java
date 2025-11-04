@@ -15,16 +15,15 @@ public class Practice {
         //intScore[i] = intValue;
 
 
-
         //intScore[i] = score[i];
         }
         max = min = intScore[0];
 
     for(int s : intScore){
-        Integer maxValue = Integer.max(max , s);
-        max = maxValue;
-        Integer minValue = Integer.min(min , s);
-        min = minValue;
+        max = Integer.max(max , s);
+
+        min = Integer.min(min , s);
+
     }
 //    for(int i = 0; i < intScore.length; i++){
 //            if(max < intScore[i]) {max = intScore[i];}
