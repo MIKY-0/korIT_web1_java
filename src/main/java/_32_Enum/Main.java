@@ -5,7 +5,7 @@ public class Main {
         int dcRate = 0;
         if(grade == ClassGrade.BASIC){
             dcRate = 5;
-        }.
+        }
         return price * dcRate / 100.0;
     }
 
