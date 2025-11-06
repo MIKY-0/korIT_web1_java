@@ -23,7 +23,7 @@ public class ObjectStudent {
     }
 
     @Override
-    public int hashCode() {//
+    public int hashCode() {// equals를 오버라이딩 하면 반드시 hashCode도 오버라이딩 해야한다
         return Objects.hash(name, age);
     }
 }
