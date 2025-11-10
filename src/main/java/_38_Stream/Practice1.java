@@ -18,7 +18,7 @@ public class Practice1 {
         List<String> itemNames = items.stream()//상품명만 추출.
                 .map(item -> item.getName()) // item을 String으로 변환해야되서 map 사용
                 .collect(Collectors.toList());
-        System.out.println(itemNames);
+        System.out.println(itemNames); // items를 map을 이용해서 name만 뽑고 collect를 이용해서 5개 필드 모두 추출.
 
         //(문제1)가격들만 뽑아서 평균가격 출력.
         // stream에서는 외부변수 사용 제한(final만 사용 가능)
@@ -34,6 +34,10 @@ public class Practice1 {
                             int price = item.getPrice();
                             System.out.println(stock * price);
                         });
+        // List<Integer> prices = items.stream()
+        //             .map(item -> item.getStock() * item.getPrice())
+        //             .collect(Collectors.toList());
+        //     System.out.println(prices);  위에 forEach()랑 다른코드?
 
         //(문제3)재고가 1개 이상이면서 세일중인 items들 List로 콜렉트
         List<Item> stock1Over = items.stream()
