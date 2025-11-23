@@ -33,10 +33,10 @@ public class MapMain {
         System.out.println();
         //Map을 for문으로 순회.
         //1. key들만 따로 뽑아내서 for문으로 일일이 get해주는 방법
-        Set<String> keys = studentMap.keySet(); // 모든키를 Set으로 리턴
+        Set<String> keys = studentMap.keySet(); // 모든키를 Set으로 리턴. keys에 studentMap의 모든 키들을 저장.
         //keySet()메서드 내부에서 for문을 사용하고 있다.
-        for(String key : keys){
-            Integer value = studentMap.get(key);
+        for(String key : keys){ 
+            Integer value = studentMap.get(key); //studentMap.get(key)를 해서 value값을 꺼내서 value변수에 저장.
             System.out.println(key + " : " + value);
         }
 
